@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Members — Fours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body data-page="members">
+
+<div class="grid-bg"></div>
+<div class="grid-glow" id="glow"></div>
+<div class="vignette"></div>
+
+<nav>
+  <a class="nav-left" href="/home/">
+    <span class="nav-dot"></span>fours.lol
+  </a>
+  <div class="nav-right">
+    <a class="nav-link" data-page-link="members" href="/members/">MEMBERS</a>
+    <button class="burger" id="burgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="menu-backdrop" id="menuBackdrop"></div>
+<div class="menu-panel" id="menuPanel">
+  <a class="menu-item" data-page-link="home" href="/home/"><span class="num">01</span>Home</a>
+  <a class="menu-item" data-page-link="members" href="/members/"><span class="num">02</span>Members</a>
+  <a class="menu-item" href="/home/#join"><span class="num">03</span>Join</a>
+</div>
+
+<main>
+  <section class="members-hero reveal">
+    <p class="label">The Roster</p>
+    <h1>Our Members</h1>
+    <p class="sub">The people behind the name</p>
+    <div class="title-underline"></div>
+  </section>
+
+  <div class="tier reveal">
+    <div class="tier-head">
+      <span class="tier-name">God</span>
+      <span class="tier-line"></span>
+      <span class="tier-count" id="count-god">00</span>
+    </div>
+    <div class="member-grid" id="grid-god"></div>
+  </div>
+
+  <div class="tier reveal">
+    <div class="tier-head">
+      <span class="tier-name">Fathers</span>
+      <span class="tier-line"></span>
+      <span class="tier-count" id="count-fathers">00</span>
+    </div>
+    <div class="member-grid" id="grid-fathers"></div>
+  </div>
+
+  <div class="tier reveal">
+    <div class="tier-head">
+      <span class="tier-name">Family</span>
+      <span class="tier-line"></span>
+      <span class="tier-count" id="count-family">00</span>
+    </div>
+    <div class="member-grid" id="grid-family"></div>
+    <p class="roster-note">Roster pulled from members.config.js — edit that file to update names or photos.</p>
+  </div>
+</main>
+
+<footer>
+  <span class="domain">fours.lol</span>
+  © 2026 Fours. Best of the best.
+</footer>
+
+<script src="../members.config.js"></script>
+<script src="../render-members.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>
