@@ -12,7 +12,7 @@
    You can add/remove entries within each list freely.
 ============================================================ */
 
-const FOURS_MEMBERS = {
+window.FOURS_MEMBERS = {
 
   god: [
     {
