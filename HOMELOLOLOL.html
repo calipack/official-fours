@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body data-page="home">
+
+<div class="grid-bg"></div>
+<div class="grid-glow" id="glow"></div>
+<div class="vignette"></div>
+
+<nav>
+  <a class="nav-left" href="/home/">
+    <span class="nav-dot"></span>fours.lol
+  </a>
+  <div class="nav-right">
+    <a class="nav-link" data-page-link="members" href="/members/">MEMBERS</a>
+    <button class="burger" id="burgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="menu-backdrop" id="menuBackdrop"></div>
+<div class="menu-panel" id="menuPanel">
+  <a class="menu-item" data-page-link="home" href="/home/"><span class="num">01</span>Home</a>
+  <a class="menu-item" data-page-link="members" href="/members/"><span class="num">02</span>Members</a>
+  <a class="menu-item" href="/home/#join"><span class="num">03</span>Join</a>
+</div>
+
+<main>
+  <section class="hero">
+    <div class="eyebrow">Est. 26 / 8</div>
+    <div class="title-wrap" id="title">
+      <span data-final="F">4</span>
+      <span data-final="O">4</span>
+      <span data-final="U">4</span>
+      <span data-final="R">4</span>
+      <span data-final="S">4</span>
+    </div>
+    <div class="title-underline"></div>
+    <p class="tagline">Best of the best. No exceptions.</p>
+    <div class="scroll-cue"><span>SCROLL</span><span class="arrow"></span></div>
+  </section>
+
+  <section class="section reveal">
+    <p class="label">I. The Circle</p>
+    <h2>An elite Roblox friend group.</h2>
+    <p>Fours is an elite Roblox friend group — a tight circle built around friendship, competition, skill, and the constant drive to be the best of the best. We play a variety of competitive games, from Da Hood and Hood Rivals to FPS games and anything else where skill, teamwork, and dedication separate the good from the great.</p>
+  </section>
+
+  <div class="divider reveal"></div>
+
+  <section class="section reveal">
+    <p class="label">II. The Standard</p>
+    <h2>We chase leaderboards, not headcounts.</h2>
+    <p>What started as a group of friends playing together became a community focused on competition and reaching the highest level possible. We aim for leaderboards, chase wins, and push each other to improve every time we play. For us, it isn't just about playing the game — it's about making a name for ourselves and proving we belong at the top.</p>
+  </section>
+
+  <div class="divider reveal"></div>
+
+  <section class="section reveal" id="join">
+    <p class="label">III. The Roster</p>
+    <h2>Best of the best. Not the biggest.</h2>
+    <p>We don't care about being the biggest. We care about being the best of the best. Every member brings their own skill, experience, and personality to Fours, but we're all here for the same reason: to compete, improve, and win together.</p>
+
+    <div class="gate">
+      <button class="btn" id="requestBtn">Request to Join →</button>
+      <div class="fine">Reviewed by the crew &middot; skill and attitude both count</div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <p class="label">Already in the crew?</p>
+    <a class="btn-outline" href="/members/">Meet the Members</a>
+  </section>
+</main>
+
+<footer>
+  <span class="domain">fours.lol</span>
+  © 2026 Fours. Best of the best.
+</footer>
+
+<script src="../app.js"></script>
+</body>
+</html>
