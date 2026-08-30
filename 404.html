@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Fours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<style>
+  .error-hero{
+    min-height:100svh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding: 0 24px;
+  }
+  .error-code{
+    font-family: var(--display);
+    font-weight:700;
+    font-size: clamp(4rem, 20vw, 11rem);
+    line-height:0.9;
+    letter-spacing:-0.02em;
+    background: linear-gradient(180deg, var(--ink) 0%, var(--green) 130%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity:0;
+    animation: fadeUp 0.8s ease forwards;
+  }
+  .error-title{
+    font-family: var(--mono);
+    font-size: clamp(13px, 2.4vw, 16px);
+    letter-spacing:0.3em;
+    text-transform:uppercase;
+    color: var(--green);
+    margin-top: 20px;
+    opacity:0;
+    animation: fadeUp 0.8s ease forwards;
+    animation-delay: 0.15s;
+  }
+  .error-sub{
+    font-family: var(--mono);
+    font-size:13px;
+    color: var(--ink-dim);
+    max-width:420px;
+    line-height:1.8;
+    margin-top: 18px;
+    opacity:0;
+    animation: fadeUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+  }
+  .error-actions{
+    display:flex;
+    gap:14px;
+    margin-top: 34px;
+    opacity:0;
+    animation: fadeUp 0.8s ease forwards;
+    animation-delay: 0.45s;
+  }
+</style>
+</head>
+<body data-page="404">
+
+<div class="grid-bg"></div>
+<div class="grid-glow" id="glow"></div>
+<div class="vignette"></div>
+
+<nav>
+  <a class="nav-left" href="/home/">
+    <span class="nav-dot"></span>fours.lol
+  </a>
+  <div class="nav-right">
+    <a class="nav-link" data-page-link="members" href="/members/">MEMBERS</a>
+    <button class="burger" id="burgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="menu-backdrop" id="menuBackdrop"></div>
+<div class="menu-panel" id="menuPanel">
+  <a class="menu-item" data-page-link="home" href="/home/"><span class="num">01</span>Home</a>
+  <a class="menu-item" data-page-link="members" href="/members/"><span class="num">02</span>Members</a>
+  <a class="menu-item" href="/home/#join"><span class="num">03</span>Join</a>
+</div>
+
+<main>
+  <section class="error-hero">
+    <div class="error-code">404</div>
+    <p class="error-title">Nothing here</p>
+    <p class="error-sub">This page doesn't exist — maybe it was never here, or you followed a broken link.</p>
+    <div class="error-actions">
+      <a class="btn" href="/home/">Back to Home</a>
+      <a class="btn-outline" href="/members/">Meet the Members</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="domain">fours.lol</span>
+  © 2026 Fours. Best of the best.
+</footer>
+
+<script src="/app.js"></script>
+</body>
+</html>
